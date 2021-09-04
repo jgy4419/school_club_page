@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/profile.css">
+    <!--JS-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="../js/profile.js"></script>
+    <title>프로필</title>
+</head>
+<body onload="init()">
+    <header>
+        <div class="dark_bg">
+            <div class="back">
+                <img id="backImg" src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image">
+            </div>
+            <div class="profile">
+            </div>
+            <img id="profile" src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image">
+            <div class="explanation"></div>
+        </div>
+    </header>
+    <section>
+        <div class="dark_bg">
+            
+                <div class="all">
+                    동아리 전체 보기
+                </div>
+                <div class="profile_correction_text">
+                    프로필 수정
+                </div>
+                <div class="box">
+                    <div class="left">
+                        <div class="introduces">
+                            <div class="text">동아리 소개 <br>
+                                <span class="material-icons">
+                                    perm_contact_calendar
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="joins">
+                            <div class="text">동아리 가입 <br>
+                                <span class="material-icons">
+                                    group_add
+                                </span>                      
+                            </div>  
+                        </div>
+                        <div class="pictures">
+                            <div class="text">동아리 사진 <br>
+                                <span class="material-icons">
+                                    collections
+                                </span>                      
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="profile_correction">
+            <div class="close">
+                <span class="material-icons">
+                    close
+                </span>
+            </div>
+            <div class="profile_choice"><input style="display: block;" type="file" id="input-profile" required value="프로필 사진 선택">프로필 사진 선택</div>
+            <div class="backImage_choice"><input style="display: block;" type="file" id="input-backImg" required>배경화면 선택</div>
+            <!-- <div class="picture_choice"><input multiple = "multiple" style="display: block;" type="file" id="input-slide" class="input-slide" required>동아리 사진 선택1(최대 4장)</div> -->
+            <div class="picture_choice">
+                <input id="browse" type="file" onchange="previewFiles()" multiple>동아리 사진 선택
+            </div>
+            <!--form 해서 enter 기능 추가하기 -->
+            <div class="initial_value"><input type="submit" value="초기화"></div>
+            <!-- <div class="setting"><input type="submit" value="동아리 사진 삭제"></div> -->
+        </div>
+        <div class="introduce_section">
+            <div class="close">
+                <span class="material-icons">
+                    close
+                </span>
+            </div>
+            <div class="intriduce_inner">
+
+            </div>
+        </div>
+        <div class="organization_section">
+            <div class="close">
+                <span class="material-icons">
+                    close
+                </span>
+            </div>
+        </div>
+        <div class="picture_section">
+            <div class="close">
+                <span class="material-icons">
+                    close
+                </span>
+            </div>
+            <img src = ""alt="선택된 이미지가 보이는 부분" class="picture_section_img">
+            <div class="img">
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
